@@ -33,7 +33,8 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   transition: 0.3s ease-in-out;
-  background-color: none;
+  background-color: ${({ navBackground }) =>
+    navBackground ? "rgba(0, 0, 0, 0.7)" : "none"};
   .search_bar {
     background-color: white;
     width: 30%;
