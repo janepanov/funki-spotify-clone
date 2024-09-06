@@ -109,7 +109,7 @@ export default function PlayerControls() {
       <div className="repeat">
         <FiRepeat />
       </div>
-      {loading && <div>Loading...</div>}
+      {loading && <div className="loader">Loading...</div>}
     </Container>
   );
 }
@@ -134,6 +134,10 @@ const Container = styled.div`
   .previous,
   .next,
   .state {
+    font-size: 2rem;
+  }
+  .loader {
+    color: white;
     font-size: 2rem;
   }
 `;
